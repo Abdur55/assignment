@@ -14,7 +14,7 @@
            <div class="navbar sticky top-0 bg-[#F9F7F3] ">
   <div class="navbar-start ml-28 ">
    
-    <h1 onclick="location.href='blog.html'" class="btn  border-none bg-[#B4F461] "><a class="btn btn-ghost normal-case hover:text-white text-xl text-black">Blog</a></h1>
+    <h1  class="btn  border-none bg-[#B4F461] "><a id="blog" class="btn btn-ghost normal-case hover:text-white text-xl text-black">Blog</a></h1>
   </div>
   <div class="navbar-center hidden lg:flex">
     <div class="  flex justify-center items-center gap-3">
@@ -25,23 +25,28 @@
   </div>
   <div class="navbar-end mr-28 gap-3">
     <img src="/assets/coin.png" alt="">
-    <h2 class="uppercase text-[#111111B2] text-xl">500 
-      <span>bdt</span>
+    <h2 id="from-donated" class="uppercase text-[#111111B2] text-xl">5000  bdt
     </h2>
   </div>
 </div>
 <!-- center button start -->
+
+    </header>
+
 <div class="text-center space-y-12 ">
 
-<button class="btn btn-secondary mr-2">Donation</button>
-<button class="btn btn-secondary">History</button>
+<button id="Donation-btn" class="btn btn-secondary mr-2">Donation</button>
+<button id="history-btn" class=" btn btn-secondary">History</button>
 </div>
 <!--center button end -->
-    </header>
-    <main class="lg:mx-auto lg:w-[1100px] mt-28">
+
+
+
+
+    <main id="main" class="  lg:mx-auto lg:w-[1100px] mt-28">
     <div class=" space-y-12 p-4 ">
       <!-- contain---1 start -->
-      <div class="lg:flex space-y-4 gap-12">
+      <div class="  lg:flex space-y-4 gap-12">
         <!-- donation img -->
         <div>
            <img class="w-[1800px]" src="/assets/noakhali.png" alt="">
@@ -51,11 +56,11 @@
         <div class="space-y-4 ">
         <div class="flex gap-3">
           <img class="w-[20px] h-[25px]" src="/assets/coin.png" alt="">
-          <h4 class="uppercase text-xl">0 bdt</h4>  
+          <h4 id="donated-balance" class="uppercase text-xl">0 bdt</h4>  
         </div>
-        <h2 class="text-black font-bold text-xl">Donate for Flood at Noakhali, Bangladesh</h2>
+        <h2 id="place" class="text-black font-bold text-xl">Donate for Flood at Noakhali, Bangladesh</h2>
         <p class="text-[#111111B2] mb-2"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-         <input type="text" placeholder="Write Donation Amount" class="input lg:w-full  bg-slate-100" />
+         <input id="donat-area" type="text" placeholder="Write Donation Amount" class="input lg:w-full  bg-slate-100" />
          <button id="donat-btn" class="btn  lg:ml-60 border-none  bg-[#B4F461]">Donate Now</button>
          
         </div>
@@ -64,55 +69,51 @@
     
 
     <!-- contain---2 start -->
-      <div class="lg:flex space-y-4 gap-12">
-        <!-- donation img -->
-        <div>
-           <img class="w-[1800px]" src="/assets/feni.png" alt="">
-           
-        </div>
-        <!-- dontation containt -->
-        <div class="space-y-4 ">
-        <div class="flex gap-3">
-          <img class="w-[20px] h-[25px]" src="/assets/coin.png" alt="">
-          <h4 class="uppercase text-xl">0 bdt</h4>  
-        </div>
-        <h2 class="text-black font-bold text-xl">Donate for Flood at Noakhali, Bangladesh</h2>
-        <p class="text-[#111111B2] mb-2"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-         <input type="text" placeholder="Write Donation Amount" class="input lg:w-full  bg-slate-100" />
-         <button id="donat-btn" class="btn border-none lg:ml-60 bg-[#B4F461]">Donate Now</button>
-         
-        </div>
-      </div>
+     
       <!-- contain---2 end -->
     
 
     <!-- contain---3 start -->
-      <div class="lg:flex space-y-4 gap-12">
-        <!-- donation img -->
-        <div>
-           <img class="lg:w-[1800px]" src="/assets/quota-protest.png" alt="">
-           
-        </div>
-        <!-- dontation containt -->
-        <div class="space-y-4 ">
-        <div class="flex gap-3">
-          <img class="w-[20px] h-[25px]" src="/assets/coin.png" alt="">
-          <h4 class="uppercase text-xl">0 bdt</h4>  
-        </div>
-        <h2 class="text-black font-bold text-xl">Donate for Flood at Noakhali, Bangladesh</h2>
-        <p class="text-[#111111B2] mb-2 "> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-         <input type="text" placeholder="Write Donation Amount" class="input  lg:w-full   bg-slate-100" />
-         <button id="donat-btn" class="btn border-none lg:ml-60 bg-[#B4F461]">Donate Now</button>
-         
-        </div>
-      </div>
+   
       <!-- contain---3 end -->
+      
 
     </div>
- 
+    
     </main>
+
+   
+
+    <div id="history-container" class="text-center mt-28 h-[491px] hidden">
+      
+      <div id="history-containt"></div>
+    </div>
+
+      <div id="Important-section" class=" hidden  mb-80  lg:mx-auto w-[1100px] mt-32  ">
+        <h1 class="text-4xl font-bold text-black mb-12">Important FAQ</h1>
+        <div class="space-y-4">
+        <!-- question 1  -->
+        <div class="bg-yellow-50 p-4 rounded-md">
+            <h2 class="text-xl text-black mb-6 font-medium">What is the DOM in JavaScript?</h2>
+            <p class="text-black">A way to access and change HTML using JavaScript.</p>
+        </div>
+        <!-- question 2 -->
+         <div class="bg-yellow-50 p-4 rounded-md">
+            <h2 class="text-xl text-black mb-6 font-medium"> How to change text of an element?</h2>
+            <p class="text-black">element.innerText = 'New Text'</p>
+        </div>
+       
+        <!-- question 3 -->
+         <div class="bg-yellow-50 p-4 rounded-md">
+            <h2 class="text-xl text-black mb-6 font-medium">How to select an element by ID?</h2>
+            <p class="text-black">document.getElementById('id')</p>
+        </div>
+        </div>
+      </div>
+     
     <script src="js/shared.js"></script>
     <script src="js/index.js"></script>
+    <script src="js/feature.js"></script>
 </body>
 
 </html>
