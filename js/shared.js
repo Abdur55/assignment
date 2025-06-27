@@ -10,7 +10,7 @@ function gettextidbyshardfunction(id){
 }
 
 function getelement(id){
-    const elementtext = document.getElementById.value
+    const elementtext = document.getElementById
     return elementtext
 }
 
@@ -25,10 +25,17 @@ function getinputbyshardid(id){
 function showinhistory(id){
     document.getElementById('main').classList.add('hidden')
     document.getElementById('history-container').classList.add('hidden')
+    document.getElementById('Important-section').classList.add('hidden')
+    document.getElementById('donateModal').classList.add('hidden')
 
     // remove hidden class
 
     document.getElementById(id).classList.remove('hidden')
+}
+
+
+function showhidden(id){
+  document.getElementById('closeModal').classList.add('hidden')
 }
 
 

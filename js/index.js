@@ -2,6 +2,8 @@
 
 document.getElementById('donat-btn').addEventListener('click', function(event){
     event.preventDefault
+
+   
     
     
     const donatedbalance = gettextidbyshardfunction('donated-balance')
@@ -21,8 +23,10 @@ document.getElementById('donat-btn').addEventListener('click', function(event){
 
         
     const div =   document.createElement('div')
+    div.classList.add('bg-slate-200')
      div.innerHTML = `
-       <p> You have donated ${inputnumber} tk  </p>
+     <p class="text-black text-2xl">  ${inputnumber} tk Donate for Flood at Noakhali, Bangladesh  </p>
+     <p class=" space-y-3"> Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time) </p>
      `
      document.getElementById('history-containt').appendChild(div)
     }
@@ -33,11 +37,7 @@ document.getElementById('donat-btn').addEventListener('click', function(event){
 
 
 
-document.getElementById('blog').addEventListener('click', function(event){
-  event.preventDefault
 
-  
-})
 
 
 
