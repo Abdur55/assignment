@@ -34,10 +34,10 @@
 
     </header>
 
-<div class="text-center space-y-12 ">
+<div id="btn-container" class="text-center space-y-12 ">
 
-<button id="Donation-btn" class="btn btn-secondary mr-2">Donation</button>
-<button id="history-btn" class=" btn btn-secondary">History</button>
+<button id="Donation-btn" class="btn  mr-2 border-none">Donation</button>
+<button id="history-btn" class=" btn  border-none">History</button>
 </div>
 <!--center button end -->
 
@@ -159,11 +159,17 @@
      </div>
       <!-- part----3------end-->
       <!-- part----4------start-->
-        <div id="donateModal" class=" fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50 hidden">
+       
+      <!-- part----4------end-->
+    </main>
+
+
+    
+    <div id="donateModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center z-50">
     <div class="bg-white w-[90%] max-w-md p-8 rounded-2xl shadow-xl text-center">
       <h2 class="text-3xl font-bold text-gray-800 mb-4">Congrats!</h2>
       <div class="flex justify-center mb-4">
-        <img src="https://cdn-icons-png.flaticon.com/512/616/616408.png" alt="Coin Icon" class="w-12 h-12"/>
+        <img src="/assets/coin.png" alt="Coin Icon" class="w-12 h-12"/>
       </div>
       <p class="text-gray-600">You Have Donated for Humankind</p>
       <p class="text-lg font-semibold text-gray-800 mt-2">Successfully</p>
@@ -172,19 +178,11 @@
       </button>
     </div>
   </div>
-      <!-- part----4------end-->
-    </main>
 
-
-    
-
-   
-
-    
-   
     <script src="js/shared.js"></script>
     <script src="js/index.js"></script>
     <script src="js/feature.js"></script>
+    
 </body>
 
 </html>

@@ -2,10 +2,7 @@
 
 document.getElementById('donat-btn').addEventListener('click', function(event){
     event.preventDefault
-
-   
-    
-    
+ 
     const donatedbalance = gettextidbyshardfunction('donated-balance')
     const fromdonation = gettextidbyshardfunction('from-donated')
     const inputnumber = getinputbyshardid('donat-area')
@@ -29,11 +26,15 @@ document.getElementById('donat-btn').addEventListener('click', function(event){
      <p class=" space-y-3"> Date : Tue Sep 17 2024 08:39:11 GMT +0600 (Bangladesh Standard Time) </p>
      `
      document.getElementById('history-containt').appendChild(div)
+     
     }
     else{
        alert('You can to donat Money')
     }
 })
+
+
+
 
 
 
